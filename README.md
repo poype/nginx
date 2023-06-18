@@ -18,3 +18,5 @@ upstream service1 {
     server localhost:8002 weight=1;
     server localhost:8003 weight=1 backup;
 }
+
+6. 负载均衡策略：轮询、权重、ip_hash、url_hash、least_conn、fair。后四个几乎不会使用到。一般只会使用轮询。
