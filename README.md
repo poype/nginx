@@ -6,3 +6,6 @@ sudo nginx -c /home/sky/Workspace/nginx/nginx.conf
 3. 停止nginx服务
 sudo nginx -s stop   立刻停止服务
 sudo nginx -s quit   优雅停止服务
+
+4. 重新加载配置文件
+sudo nginx -s reload
