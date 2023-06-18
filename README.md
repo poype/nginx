@@ -20,3 +20,7 @@ upstream service1 {
 }
 
 6. 负载均衡策略：轮询、权重、ip_hash、url_hash、least_conn、fair。后四个几乎不会使用到。一般只会使用轮询。
+
+7. Http refer header可以用于防盗链，所谓盗链就是其它网站引用了你的js、css或图片等静态资源。
+   refer header记录了是哪个site要引用你的静态资源。
+   nginx可以设置refer的白名单，规定只有在白名单中的site才能引用静态资源，否则返回403
