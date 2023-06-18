@@ -1,7 +1,8 @@
 const http = require('http')
 
 const server = http.createServer((req, res) => {
-    res.end('I am server 8003')
+    const url = req.url;
+    res.end(`I am server 8003, the url is ${url}`)
 })
 
 server.listen(8003, '0.0.0.0', () => {
